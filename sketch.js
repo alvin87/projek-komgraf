@@ -8,7 +8,7 @@ function setup() {
   
     // Set text color, size, and alignment
     fill(255);
-    textSize(20);
+    textSize(15);
     textAlign(CENTER, CENTER);
   
     // Set the color mode to hue-saturation-brightness (HSB)
@@ -24,7 +24,7 @@ function setup() {
     background(78);
   
     // Loop through angles 0, 30, 60, 90 degrees
-    for (let angle=0; angle <= 360; angle += 20) {
+    for (let angle=10; angle <= 360; angle += 20) {
         // Save current coordinate system
         push();                       
   
@@ -33,12 +33,12 @@ function setup() {
         rotate(angle);
   
         // Set color based on angle and draw line along x-axis
-        stroke(angle+100, 100, 100,);
+        stroke(angle+200, 100, 150,);
         strokeWeight(5);
         line(0, 0, 150, 0);
   
         // Display the angle
-        strokeWeight(1);              
+        strokeWeight(3);              
         text(angle, 170, 0);
   
         // Restore coordinate system
